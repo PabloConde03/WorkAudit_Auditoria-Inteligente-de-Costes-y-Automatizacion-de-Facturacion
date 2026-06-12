@@ -1,7 +1,4 @@
-![En Proceso](https://img.shields.io/badge/Estado-En%20Proceso-orange)
-
-**Tecnologías utilizadas:** 
-![Java](https://img.shields.io/badge/Java-ED8B00?style=flat&logo=openjdk&logoColor=white) ![Maven](https://img.shields.io/badge/Apache%20Maven-C71A36?style=flat&logo=apache-maven&logoColor=white)
+![Estado](https://img.shields.io/badge/Estado-En%20Proceso-orange) ![Java](https://img.shields.io/badge/Java-25-ED8B00?style=flat&logo=openjdk&logoColor=white) ![Maven](https://img.shields.io/badge/Maven-3.8+-C71A36?style=flat&logo=apache-maven&logoColor=white)
 
 # WorkAudit - Auditoría Inteligente de Costes y Automatización de Facturación
 
