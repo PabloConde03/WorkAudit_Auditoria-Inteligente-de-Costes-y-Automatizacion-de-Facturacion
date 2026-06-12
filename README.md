@@ -1,3 +1,8 @@
+![En Proceso](https://img.shields.io/badge/Estado-En%20Proceso-orange)
+
+**Tecnologías utilizadas:** 
+![Java](https://img.shields.io/badge/Java-ED8B00?style=flat&logo=openjdk&logoColor=white) ![Maven](https://img.shields.io/badge/Apache%20Maven-C71A36?style=flat&logo=apache-maven&logoColor=white)
+
 # WorkAudit - Auditoría Inteligente de Costes y Automatización de Facturación
 
 WorkAudit es una plataforma de ingeniería de software diseñada para optimizar la gestión financiera de proyectos tecnológicos. El sistema elimina las fugas de ingresos mediante la auditoría recursiva de costes en tiempo real y un motor de estados robusto para el ciclo de vida de la facturación.
