@@ -1,6 +1,7 @@
 package com.workaudit.composite;
 
 import com.workaudit.model.TimeLog;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -18,10 +19,10 @@ public class TareaHoja implements ComponenteProyecto {
     }
 
     @Override
-    public double getCoste() {
+    public BigDecimal getCoste() {
         return logs.stream()
-                .mapToDouble(log -> log.getHoras() * log.getDeveloper().getTarifa())
-                .sum();
+                .map(TimeLog::getCoste)
+                .reduce(BigDecimal.ZERO, BigDecimal::add);
     }
 
     @Override

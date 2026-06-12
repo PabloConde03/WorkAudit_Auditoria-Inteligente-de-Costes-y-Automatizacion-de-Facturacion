@@ -1,10 +1,12 @@
 package com.workaudit.state;
 
+import java.math.BigDecimal;
+
 public class Factura {
     private EstadoFactura estado;
-    private double monto;
+    private BigDecimal monto;
 
-    public Factura(double monto) {
+    public Factura(BigDecimal monto) {
         this.monto = monto;
         this.estado = new EstadoBorrador();
     }
@@ -21,6 +23,6 @@ public class Factura {
         return estado.getEstado();
     }
 
-    public double getMonto() { return monto; }
-    public void setMonto(double monto) { this.monto = monto; }
+    public BigDecimal getMonto() { return monto; }
+    public void setMonto(BigDecimal monto) { this.monto = monto; }
 }

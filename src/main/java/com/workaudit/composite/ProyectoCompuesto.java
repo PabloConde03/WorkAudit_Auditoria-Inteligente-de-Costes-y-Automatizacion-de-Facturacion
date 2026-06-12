@@ -1,5 +1,6 @@
 package com.workaudit.composite;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,10 +18,10 @@ public class ProyectoCompuesto implements ComponenteProyecto {
     }
 
     @Override
-    public double getCoste() {
+    public BigDecimal getCoste() {
         return children.stream()
-                .mapToDouble(ComponenteProyecto::getCoste)
-                .sum();
+                .map(ComponenteProyecto::getCoste)
+                .reduce(BigDecimal.ZERO, BigDecimal::add);
     }
 
     @Override
