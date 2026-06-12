@@ -1,0 +1,2 @@
+# WorkAudit---Auditor-a-Inteligente-de-Costes-y-Automatizaci-n-de-Facturaci-n
+WorkAudit es una plataforma backend de ingeniería de software diseñada para transformar radicalmente la gestión financiera de proyectos tecnológicos. El sistema elimina las fugas silenciosas de ingresos mediante la auditoría recursiva de costes en tiempo real y un motor de estados robusto para el ciclo de vida de la facturación.
