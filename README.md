@@ -1,4 +1,5 @@
 ![Estado](https://img.shields.io/badge/Estado-En%20Proceso-orange) ![Java](https://img.shields.io/badge/Java-25-ED8B00?style=flat&logo=openjdk&logoColor=white) ![Maven](https://img.shields.io/badge/Maven-3.8+-C71A36?style=flat&logo=apache-maven&logoColor=white) ![Jackson](https://img.shields.io/badge/Jackson-JSON-blue?style=flat&logo=json&logoColor=white)
+![Horas](https://img.shields.io/badge/Horas%20dedicadas-2-blue)
 
 # WorkAudit - Auditoría Inteligente de Costes y Automatización de Facturación
 
