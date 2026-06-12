@@ -1,21 +1,69 @@
-WorkAudit - Auditoría Inteligente de Costes y Automatización de FacturaciónWorkAudit es una plataforma backend de ingeniería de software diseñada para transformar radicalmente la gestión financiera de proyectos tecnológicos. El sistema elimina las fugas silenciosas de ingresos mediante la auditoría recursiva de costes en tiempo real y un motor de estados robusto para el ciclo de vida de la facturación. 
+# WorkAudit - Auditoría Inteligente de Costes y Automatización de Facturación
 
-🚀 Características Principales
--Cálculo de Costes Recursivo: Implementación del patrón estructural Composite para modelar proyectos complejos como árboles dinámicos de granularidad fina (Fases, Subfases y Entregables). 
--Cero Fugas Silenciosas: Auditoría automática en tiempo real que compara el presupuesto manual frente a la agregación jerárquica de horas reales trabajadas por los desarrolladores.  
--Motor de Estados de Facturación: Control estricto del ciclo de vida de las facturas basado en el patrón State, asegurando logs e hitos inmutables antes de cualquier liquidación.  
--Arquitectura de Clase Mundial: Código desacoplado diseñado bajo principios SOLID, combinando patrones estructurales y de comportamiento (Composite, State, Observer) para una alta escalabilidad.  
+WorkAudit es una plataforma de ingeniería de software diseñada para optimizar la gestión financiera de proyectos tecnológicos. El sistema elimina las fugas de ingresos mediante la auditoría recursiva de costes en tiempo real y un motor de estados robusto para el ciclo de vida de la facturación.
 
-📐 Algoritmo de Control y Modelo MatemáticoCada componente del proyecto calcula de forma autónoma su coste acumulado basándose en el estado de sus nodos hijos en tiempo real. La fórmula utilizada para la sumatoria recursiva es:  $$C = \sum (H \times T)$$Donde:$C$ es el Coste total acumulado.  $H$ representa las horas de desarrollo auditadas.  $T$ representa la tarifa/tasa unitaria asignada al desarrollador.  🗂️ Estructura del Proyecto (Estructura de Árbol Dinámico)El sistema organiza los flujos financieros de la siguiente manera:  └── 📂 Proyecto Core (Suma total acumulada)
+## 🚀 Características Principales
+
+- **Cálculo de Costes Recursivo**: Implementación del patrón estructural **Composite** para modelar proyectos complejos como árboles dinámicos de granularidad fina (Fases, Subfases y Entregables).
+- **Eliminación de Fugas Silenciosas**: Auditoría automática en tiempo real que compara el presupuesto manual frente a la agregación jerárquica de horas reales trabajadas.
+- **Motor de Estados de Facturación**: Control estricto del ciclo de vida de las facturas basado en el patrón **State**, asegurando logs e hitos inmutables antes de cualquier liquidación.
+- **Arquitectura Escalable**: Código desacoplado diseñado bajo principios **SOLID**, combinando patrones estructurales y de comportamiento (Composite, State, Observer).
+
+## 📐 Modelo Matemático y Control
+
+Cada componente del proyecto calcula de forma autónoma su coste acumulado basándose en el estado de sus nodos hijos en tiempo real.
+
+**Fórmula de Sumatoria Recursiva:**
+$$C = \sum (H \times T)$$
+
+Donde:
+- $C$: Coste total acumulado.
+- $H$: Horas de desarrollo auditadas.
+- $T$: Tarifa/tasa unitaria asignada al recurso.
+
+## 🗂️ Estructura del Proyecto
+
+El sistema organiza los flujos financieros mediante una jerarquía dinámica:
+
+```text
+└── 📂 Proyecto Core (Suma total acumulada)
     ├── 📂 Fase Backend
     │   └── 📄 </> Optimización DB (Horas × Tarifa)
     └── 📂 Fase Frontend
         └── 📄 Componentes de UI (Horas × Tarifa)
-        
-⚙️ Ciclo de Vida de Facturación (Motor de Estados)Una factura nunca puede liquidarse sin superar las reglas de auditoría automática. El flujo síncrono del sistema es:  Borrador: Carga automática de horas acumuladas desde la jerarquía del proyecto, listo para revisión interna.  Aprobado: Factura validada por el sistema tras superar las reglas de auditoría de costes.  Pagado: Conciliación final del pago y disparo de reportes de rentabilidad para el histórico.  🛠️ Requisitos e InstalaciónPrerrequisitosJava JDK 17 o superior.Apache Maven 3.8+.InstalaciónClonar el repositorio:Bashgit clone https://github.com/tu-usuario/workaudit.git
-cd workaudit
+```
 
-Compilar y ejecutar las pruebas unitarias (Garantía de Fundamentos Javalings):Bashmvn clean test
+## ⚙️ Ciclo de Vida de Facturación
 
-📈 Impacto Operativo Estimado
-95% de reducción de errores en la facturación y conciliación de horas.  Trazabilidad absoluta vinculando cada céntimo invertido directamente a la jerarquía del proyecto.  Auditoría 100% transparente y en tiempo real.  "Saber exactamente en qué se ha invertido cada segundo es la base para construir software de manera rentable." — Filosofía WorkAudit
+El motor de estados garantiza que ninguna factura sea liquidada sin superar las reglas de auditoría:
+
+1. **Borrador**: Carga automática de horas acumuladas desde la jerarquía del proyecto.
+2. **Aprobado**: Validación del sistema tras superar las reglas de auditoría de costes.
+3. **Pagado**: Conciliación final del pago y generación de reportes de rentabilidad.
+
+## 🛠️ Instalación y Configuración
+
+### Prerrequisitos
+- **Java JDK 17** o superior.
+- **Apache Maven 3.8+**.
+
+### Pasos de Instalación
+1. **Clonar el repositorio**:
+   ```bash
+   git clone https://github.com/PabloConde03/WorkAudit_Auditoria-Inteligente-de-Costes-y-Automatizacion-de-Facturacion.git
+   cd WorkAudit
+   ```
+
+2. **Compilar y ejecutar pruebas**:
+   ```bash
+   mvn clean test
+   ```
+
+## 📈 Impacto Operativo
+
+- **Reducción de errores**: Hasta un 95% en la facturación y conciliación de horas.
+- **Trazabilidad absoluta**: Vinculación directa de cada coste a la jerarquía del proyecto.
+- **Transparencia**: Auditoría 100% automatizada y en tiempo real.
+
+---
+*"Saber exactamente en qué se ha invertido cada segundo es la base para construir software de manera rentable."* — **Filosofía WorkAudit**
