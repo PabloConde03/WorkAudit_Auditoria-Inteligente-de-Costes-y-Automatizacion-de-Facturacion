@@ -3,26 +3,14 @@ package com.workaudit.model;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.time.LocalDate;
+import java.util.UUID;
 
-public class TimeLog {
-    private Developer developer;
-    private BigDecimal horas;
-    private String description;
-    private LocalDate date;
-
+public record TimeLog(UUID id, Developer developer, BigDecimal horas, String description, LocalDate date) {
     public TimeLog(Developer developer, BigDecimal horas, String description, LocalDate date) {
-        this.developer = developer;
-        this.horas = horas;
-        this.description = description;
-        this.date = date;
+        this(UUID.randomUUID(), developer, horas, description, date);
     }
 
     public BigDecimal getCoste() {
         return horas.multiply(developer.getTarifa()).setScale(2, RoundingMode.HALF_UP);
     }
-
-    public Developer getDeveloper() { return developer; }
-    public BigDecimal getHoras() { return horas; }
-    public String getDescription() { return description; }
-    public LocalDate getDate() { return date; }
 }
